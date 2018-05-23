@@ -1,0 +1,42 @@
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\ApplicationInsights.config
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Lab 21.dll.config
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Lab 21.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Lab 21.pdb
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Antlr3.Runtime.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.Web.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.WindowsServer.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.ApplicationInsights.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.Web.Infrastructure.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Newtonsoft.Json.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Helpers.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Mvc.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Optimization.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Razor.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.WebPages.Deployment.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.WebPages.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.WebPages.Razor.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\WebGrease.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Helpers.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Mvc.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Optimization.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.Razor.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.WebPages.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.WebPages.Deployment.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\System.Web.WebPages.Razor.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Antlr3.Runtime.pdb
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Newtonsoft.Json.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.ApplicationInsights.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.WindowsServer.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\bin\Microsoft.AI.Web.xml
+c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.csprojResolveAssemblyReference.cache
+c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.csproj.CoreCompileInputs.cache
+c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.dll
+c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.pdb
