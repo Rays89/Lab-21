@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Lab_21.Models;
 using System.Web.Mvc;
 
 namespace Lab_21.Controllers
@@ -27,18 +24,30 @@ namespace Lab_21.Controllers
             return View();
         }
 
-        public ActionResult Register()
+        public ActionResult AddUser()
         {
-            string[] UserDetails = { "First Name", "Last Name", "Email", "Phone Number", "password" };
-            ViewBag.UserDetails = User;
             return View();
-
         }
 
-        public ActionResult AddUser(string FirstName, string LastName, string Email, string PhoneNumber, string Password)
+        public ActionResult Register(UserInfo newuser)
         {
-            ViewBag.Message = FirstName;
-                return View("result");
-        }
+            //Validation
+            
+            if (ModelState.IsValid)
+            {
+                //Insert new user into the database
+
+                ViewBag.Message = $"Hello {newuser.FirstName}";
+            return View("result");
+
     }
+    else
+    {
+    ViewBag.Address = Request.UserHostAddress;
+        return View("Error");
+        
+            
+    }
+}
+}
 }
