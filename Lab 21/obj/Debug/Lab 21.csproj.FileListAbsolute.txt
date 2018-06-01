@@ -40,3 +40,7 @@ c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.csprojResolveAssemb
 c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.csproj.CoreCompileInputs.cache
 c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.dll
 c:\users\rachael\source\repos\Lab 21\Lab 21\obj\Debug\Lab 21.pdb
+C:\Users\Rachael\source\repos\Lab 21\Lab 21\bin\EntityFramework.dll
+C:\Users\Rachael\source\repos\Lab 21\Lab 21\bin\EntityFramework.SqlServer.dll
+C:\Users\Rachael\source\repos\Lab 21\Lab 21\bin\EntityFramework.xml
+C:\Users\Rachael\source\repos\Lab 21\Lab 21\bin\EntityFramework.SqlServer.xml

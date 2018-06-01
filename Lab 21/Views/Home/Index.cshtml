@@ -1,6 +1,28 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<br />
+Welcome to GC Coffee Shop! Please click register to enter your details.<a href="/Home/AddUser">Register!</a>
 
-<h1>Welcome to GC Coffee Shop!</h1>
-<a href="/Home/AddUser">Register</a>
+<br /><br /><br />
+<br />
+Below are different types of Coffee we have in our shop!
+@foreach (var c in ViewBag.Items)
+{
+   
+<div class="col-md-4">
+    Coffee Type!
+    <p>@c.Name</p>
+    <p>@c.Description</p>
+    <p>@c.Quantity, 1lb, Whole bean grounded, 2lb, Grounded</p>
+    <p>@c.Price</p><br />
+</div><br /><br /><br /><br /><br />
+}
+
+
+<form action="/Home/searchByEmail" method="get">
+    <br />
+    Email:<input type="text" name="Email" /><br />
+    <input type="submit" value="search" />
+
+</form>

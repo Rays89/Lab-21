@@ -5,3 +5,29 @@
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+<table class="table">
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>PhoneNumber</th>
+        <th>Password</th>
+    </tr>
+        
+    @foreach (var c in ViewBag.UserList)//used the foreach to print out the users info.
+    {
+    <tr>
+        <td>@c.FirstName</td>
+        <td>@c.LastName</td>
+        <td>@c.Email</td>
+        <td>@c.PhoneNumber</td>
+        <td>@c.Password</td>
+        <td>
+            <a href="/Home/DeleteUser?Email=@c.Email" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">
+                <span class="glyphicon glyphicon-trash"></span> Delete
+            </a>
+        </td>
+        <td><a href="/Home/ShowUserDetails?Email=@c.Email">Details</a></td>
+    </tr>
+    }
+</table>

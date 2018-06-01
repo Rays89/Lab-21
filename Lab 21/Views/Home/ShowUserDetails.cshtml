@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "ShowUserDetails";
+}
+@model Lab_21.Models.User
+<h2>ShowUserDetails</h2>
+
+<form action="/Home/SaveUserUpdates" method="post">
+
+    first Name: <input type="text" value="@Model.FirstName" name="FirstName" /><br />
+    last Name: <input type="text" value="@Model.LastName" name="LastName" /><br />
+    email: <input type="text" value="@Model.Email" name="Email" /><br />
+    phone Number: <input type="text" value="@Model.PhoneNumber" name="PhoneNumber" /><br />
+    password: <input type="Password" value="@Model.Password" name="Password" /><br />
+
+    <input type="submit" value="saveUpdates" />
+
+</form>
+
