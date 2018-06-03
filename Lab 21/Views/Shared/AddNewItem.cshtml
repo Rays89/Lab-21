@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "AddNewItem";
+}
+
+<h2>AddNewItem</h2>
+
+<a href="/Home/AddNewItem">Register!</a>
+
+@foreach (var c in ViewBag.Items)
+{
+
+        <p>@c.Name</p>
+        <p>@c.Description</p>
+        <p>@c.Quantity</p>
+        <p>$@c.Price</p><br />
+}

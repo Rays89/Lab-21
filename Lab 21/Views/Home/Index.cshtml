@@ -1,12 +1,12 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "EditItem";
 }
 <br />
 Welcome to GC Coffee Shop! Please click register to enter your details.<a href="/Home/AddUser">Register!</a>
 
 <br /><br /><br />
 <br />
-Below are different types of Coffee we have in our shop!
+
 @foreach (var c in ViewBag.Items)
 {
    
@@ -16,7 +16,7 @@ Below are different types of Coffee we have in our shop!
     <p>@c.Description</p>
     <p>@c.Quantity, 1lb, Whole bean grounded, 2lb, Grounded</p>
     <p>@c.Price</p><br />
-</div><br /><br /><br /><br /><br />
+</div>
 }
 
 

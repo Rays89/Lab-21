@@ -23,7 +23,7 @@ namespace Lab_21.Controllers
             CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
 
             ViewBag.UserList = ORM.Users.ToList();
-            
+
 
             return View();
         }
@@ -47,12 +47,12 @@ namespace Lab_21.Controllers
 
             if (ModelState.IsValid)
             {
-                
+
 
                 //2.Insert new user into the database
 
                 ORM.Users.Add(newuser);
-                
+
                 //3.save changes to the DB
                 ORM.SaveChanges();
 
@@ -90,7 +90,7 @@ namespace Lab_21.Controllers
             User Found = ORM.Users.Find(Email);
 
             //3. Remove the user
-            if (Found !=null)
+            if (Found != null)
             {
                 ORM.Users.Remove(Found);
 
@@ -105,7 +105,7 @@ namespace Lab_21.Controllers
                 ViewBag.Error.Message = "User not found";
                 return View("Error");
             }
-            
+
         }
 
         public ActionResult ShowUserDetails(string Email)
@@ -117,7 +117,7 @@ namespace Lab_21.Controllers
             User Found = ORM.Users.Find(Email);
 
             //3. send the data to a view
-            if (Found !=null)
+            if (Found != null)
             {
                 return View(Found);
             }
@@ -160,5 +160,139 @@ namespace Lab_21.Controllers
                 return View("Error");
             }
         }
+
+        public ActionResult ItemAdmin()
+        {
+            CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
+
+            ViewBag.Items = ORM.Items.ToList();
+
+            return View();
+        }
+
+        public ActionResult EditItem(string Name)
+        {
+            //1. create ORM
+            CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
+
+            //2. Find the item you want to Edit
+            Item Found = ORM.Items.Find(Name);
+
+            //3. Remove the item
+            if (Found != null)
+            {
+                ViewBag.Item = Found;
+
+                return View();
+
+            }
+            else
+            {
+                ViewBag.Error.Message = "Item not found";
+                return View("Error");
+            }
+
+        }
+
+        public ActionResult DeleteItem(string Name)
+        {
+            //1. create ORM
+            CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
+
+            //2. Find the item you want to delete
+            Item Found = ORM.Items.Find(Name);
+
+            //3. Remove the item
+            if (Found != null)
+            {
+                ORM.Items.Remove(Found);
+
+                //4. save to the DB
+                ORM.SaveChanges();
+
+                return RedirectToAction("About");
+
+            }
+            else
+            {
+                ViewBag.Error.Message = "Item not found";
+                return View("Error");
+            }
+
+        }
+
+        public ActionResult SaveItemUpdates(Item UpdatedItem)
+        {
+            //1. create the ORM
+
+            CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
+
+            //2. Find the Item
+
+            Item oldItemRecord = ORM.Items.Find(UpdatedItem.Name);
+            if (oldItemRecord != null && ModelState.IsValid)
+            {
+                //3. Update the exisiting item
+
+                oldItemRecord.Name = UpdatedItem.Name;
+                oldItemRecord.Description = UpdatedItem.Description;
+                oldItemRecord.Quantity = UpdatedItem.Quantity;
+                oldItemRecord.Price = UpdatedItem.Price;
+
+
+                ORM.Entry(oldItemRecord).State = System.Data.Entity.EntityState.Modified;
+
+                //4. save back to the DB
+                ORM.SaveChanges();
+                return RedirectToAction("About");
+
+            }
+            else
+            {
+                ViewBag.ErrorMessage = "Hooray! something went wrong!";
+                return View("Error");
+            }
+        }
+        
+        public ActionResult AddNewItem()
+        {
+            return View();
+        }
+
+        public ActionResult AddItem(Item newitem)
+        {
+            //1. create the ORM 
+            CoffeeShopDBEntities ORM = new CoffeeShopDBEntities();
+
+            if (ModelState.IsValid)
+            {
+
+
+                //2.Insert new Item into the database
+
+                ORM.Items.Add(newitem);
+
+                //3.save changes to the DB
+                ORM.SaveChanges();
+
+                ViewBag.ItemList = ORM.Items.ToList();
+
+                ViewBag.Message = $"Hello, Thank you for adding a new item {newitem.Name}";
+                return View("result");
+
+            }
+            else
+            {
+                ViewBag.Address = Request.UserHostAddress; 
+                return View("Error");
+
+            }
+        }
     }
 }
+
+
+
+
+    
+

@@ -237,9 +237,14 @@
     <Content Include="Views\Home\result.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Views\Home\ShowUserDetails.cshtml" />
+    <Content Include="Views\Home\ItemAdmin.cshtml" />
+    <Content Include="Views\Shared\AddNewItem.cshtml" />
+    <Content Include="Views\Home\EditItem.cshtml" />
+    <Content Include="Views\Home\AddNewItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
